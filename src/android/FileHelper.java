@@ -58,6 +58,10 @@ public class FileHelper {
         // SDK >= 11
         else
             realPath = FileHelper.getRealPathFromURI_API11_And_Above(cordova.getActivity(), uri);
+            
+            
+		if(realPath == null)
++            realPath =  uri.toString();
 
         return realPath;
     }
