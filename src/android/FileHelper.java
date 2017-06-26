@@ -61,7 +61,7 @@ public class FileHelper {
             
             
 		if(realPath == null)
-+            realPath =  uri.toString();
+            realPath =  uri.toString();
 
         return realPath;
     }
